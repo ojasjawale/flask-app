@@ -9,7 +9,7 @@ def home():
 @app.route('/api/data')
 def get_data():
     data = {
-        'name': 'ChatGPT',
+        'name': 'API_Server',
         'version': '4.0',
         'features': ['text generation', 'question answering', 'conversation', 'language translation']
     }
