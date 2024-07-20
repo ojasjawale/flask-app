@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Response</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script>
+        async function fetchData() {
+            const response = await fetch('/api/data');
+            const data = await response.json();
+            document.getElementById('api-content').innerHTML = JSON.stringify(data, null, 2);
+        }
+
+        window.onload = fetchData;
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Flask Web App</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/api/data">API</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="main-content">
+        <div class="container">
+            <h2>API Response</h2>
+            <pre id="api-content">Loading...</pre>
+        </div>
+    </section>
+</body>
+</html>
+

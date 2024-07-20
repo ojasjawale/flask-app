@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Flask Web App</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/api/data">API</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to Flask Web App</h1>
+            <p>This is a simple Flask web application with HTML, CSS, and an API.</p>
+        </div>
+    </section>
+    <section id="main-content">
+        <div class="container">
+            <h2>About This App</h2>
+            <p>This Flask app demonstrates the basics of a web application with an API endpoint.</p>
+        </div>
+    </section>
+</body>
+</html>
+
