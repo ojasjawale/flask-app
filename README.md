@@ -3,7 +3,7 @@
 This is a simple Flask web application built using Python 3.11. It includes a homepage and an API endpoint to demonstrate basic Flask functionality, along with Docker support for containerization.
 
 ## Project Structure
-
+```bash
 my_flask_app/
 │
 ├── static/
@@ -18,7 +18,7 @@ my_flask_app/
 ├── requirements.txt
 ├── Dockerfile
 └── README.md
-
+```
 
 - `app.py`: The main Flask application file containing routes and API endpoints.
 - `static/css/styles.css`: The CSS stylesheet for styling the web pages.
